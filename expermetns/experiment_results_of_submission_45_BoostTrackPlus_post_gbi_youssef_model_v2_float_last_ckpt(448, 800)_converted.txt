@@ -41,26 +41,26 @@ Evaluating 1 tracker(s) on 1 sequence(s) for 1 class(es) on MotChallenge2DBox da
 
 Evaluating my_tracker
 
-    MotChallenge2DBox.get_raw_seq_data(my_tracker, MOT20-01)               0.2812 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1980 sec
-    HOTA.eval_sequence()                                                   0.3236 sec
+    MotChallenge2DBox.get_raw_seq_data(my_tracker, MOT20-01)               0.2431 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1433 sec
+    HOTA.eval_sequence()                                                   0.1793 sec
     Count.eval_sequence()                                                  0.0000 sec
-1 eval_sequence(MOT20-01, my_tracker)                                    0.8050 sec
+1 eval_sequence(MOT20-01, my_tracker)                                    0.5673 sec
 
-All sequences for my_tracker finished in 0.81 seconds
+All sequences for my_tracker finished in 0.57 seconds
 
 HOTA: my_tracker-pedestrian        HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
-MOT20-01                           70.425    70.583    70.483    78.909    79.976    77.007    81.168    86.71     74.569    82.647    84.266    69.643    
-COMBINED                           70.425    70.583    70.483    78.909    79.976    77.007    81.168    86.71     74.569    82.647    84.266    69.643    
+MOT20-01                           66.993    67.191    67.207    73.545    78.706    73.216    80.248    84.005    70.263    81.756    80.971    66.199    
+COMBINED                           66.993    67.191    67.207    73.545    78.706    73.216    80.248    84.005    70.263    81.756    80.971    66.199    
 
 Count: my_tracker-pedestrian       Dets      GT_Dets   IDs       GT_IDs    
-MOT20-01                           19605     19870     105       74        
-COMBINED                           19605     19870     105       74        
+MOT20-01                           18567     19870     109       74        
+COMBINED                           18567     19870     109       74        
 
 Timing analysis:
-MotChallenge2DBox.get_raw_seq_data                                     0.2812 sec
-MotChallenge2DBox.get_preprocessed_seq_data                            0.1980 sec
-HOTA.eval_sequence                                                     0.3236 sec
+MotChallenge2DBox.get_raw_seq_data                                     0.2431 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            0.1433 sec
+HOTA.eval_sequence                                                     0.1793 sec
 Count.eval_sequence                                                    0.0000 sec
-eval_sequence                                                          0.8050 sec
-Evaluator.evaluate                                                     1.7115 sec
+eval_sequence                                                          0.5673 sec
+Evaluator.evaluate                                                     1.3961 sec

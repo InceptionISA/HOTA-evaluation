@@ -53,7 +53,7 @@ Results will be:
 For a file named `submission_1_test.txt`:
 
 ```bash
-python main.py
+python -m main
 ```
 
 Will create:
@@ -68,7 +68,3 @@ experiments/
 - Python 3.6+
 - pandas
 - numpy
-
-```
-
-```

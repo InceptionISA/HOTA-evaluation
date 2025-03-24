@@ -1,0 +1,66 @@
+Error importing BURST due to missing underlying dependency: No module named 'pycocotools'
+
+Eval Config:
+USE_PARALLEL         : False                         
+NUM_PARALLEL_CORES   : 1                             
+BREAK_ON_ERROR       : True                          
+RETURN_ON_ERROR      : False                         
+LOG_ON_ERROR         : /home/youssef/Desktop/Fawry/MOT-evaluate/HOTA-metrics/error_log.txt
+PRINT_RESULTS        : True                          
+PRINT_ONLY_COMBINED  : False                         
+PRINT_CONFIG         : True                          
+TIME_PROGRESS        : True                          
+DISPLAY_LESS_PROGRESS : False                         
+OUTPUT_SUMMARY       : True                          
+OUTPUT_EMPTY_CLASSES : True                          
+OUTPUT_DETAILED      : True                          
+PLOT_CURVES          : True                          
+
+MotChallenge2DBox Config:
+PRINT_CONFIG         : True                          
+GT_FOLDER            : /home/youssef/Desktop/Fawry/MOT-evaluate/HOTA-metrics/data/gt/mot_challenge/
+TRACKERS_FOLDER      : /home/youssef/Desktop/Fawry/MOT-evaluate/HOTA-metrics/data/trackers/mot_challenge/
+OUTPUT_FOLDER        : None                          
+TRACKERS_TO_EVAL     : ['my_tracker']                
+CLASSES_TO_EVAL      : ['pedestrian']                
+BENCHMARK            : MOT20                         
+SPLIT_TO_EVAL        : train                         
+INPUT_AS_ZIP         : False                         
+DO_PREPROC           : True                          
+TRACKER_SUB_FOLDER   : data                          
+OUTPUT_SUB_FOLDER    :                               
+TRACKER_DISPLAY_NAMES : None                          
+SEQMAP_FOLDER        : None                          
+SEQMAP_FILE          : None                          
+SEQ_INFO             : None                          
+GT_LOC_FORMAT        : {gt_folder}/{seq}/gt/gt.txt   
+SKIP_SPLIT_FOL       : False                         
+
+Evaluating 1 tracker(s) on 1 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, Count
+
+
+Evaluating my_tracker
+
+    MotChallenge2DBox.get_raw_seq_data(my_tracker, MOT20-01)               0.2285 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1194 sec
+    HOTA.eval_sequence()                                                   0.1650 sec
+    Count.eval_sequence()                                                  0.0000 sec
+1 eval_sequence(MOT20-01, my_tracker)                                    0.5144 sec
+
+All sequences for my_tracker finished in 0.51 seconds
+
+HOTA: my_tracker-pedestrian        HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
+MOT20-01                           69.497    71.299    67.966    78.709    81.067    74.655    81.618    86.621    73.131    81.682    84.123    68.713    
+COMBINED                           69.497    71.299    67.966    78.709    81.067    74.655    81.618    86.621    73.131    81.682    84.123    68.713    
+
+Count: my_tracker-pedestrian       Dets      GT_Dets   IDs       GT_IDs    
+MOT20-01                           19292     19870     113       74        
+COMBINED                           19292     19870     113       74        
+
+Timing analysis:
+MotChallenge2DBox.get_raw_seq_data                                     0.2285 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            0.1194 sec
+HOTA.eval_sequence                                                     0.1650 sec
+Count.eval_sequence                                                    0.0000 sec
+eval_sequence                                                          0.5144 sec
+Evaluator.evaluate                                                     1.1752 sec

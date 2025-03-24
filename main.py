@@ -3,7 +3,6 @@ import subprocess
 from src.create_command import get_evaluation_command
 from src.replace_tracker import replace_tracker_file
 from src.helper import save_results_to_file
-from src.helper import reverse_submission
 
 def main():
 
